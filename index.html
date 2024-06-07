@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora financiera</title>
+    <link rel="icon" href="img/pestaña.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="sort-Algorimth-body">
+    <div class="container">
+      <aside class="sidebar">
+        <img src="img/body.ico" alt="Ícono" />
+        <h2>Algoritmos de Ordenación</h2>
+
+        <button
+          class="tab-link active"
+          onclick="openModule(event, 'tablaComparacionContainer')"
+        >
+          Tabla de Comparacion
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'bubbleSortContainer')"
+        >
+          Bubble Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'selectionSortContainer')"
+        >
+          Selection Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'insertionSortContainer')"
+        >
+          Insertion Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'mergeSortContainer')"
+        >
+          Merge Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'quickSortContainer')"
+        >
+          Quick Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'randomizedQuickSortContainer')"
+        >
+          Quick Sort Randomized
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'heapSortContainer')"
+        >
+          Heap Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'countSortContainer')"
+        >
+          Count Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'radixSortContainer')"
+        >
+          Radix Sort
+        </button>
+
+        <button
+          class="tab-link"
+          onclick="openModule(event, 'bucketSortContainer')"
+        >
+          Bucket Sort
+        </button>
+      </aside>
+      <main class="main-content">
+        <!-- Inicio de ventana de Comparacion de Algoritmos -->
+        <div id="tablaComparacionContainer" class="tab-content active">
+          <div class="form-section">
+            <div>
+              <h2>Tabla de Comparacion</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <h3>Resumen</h3>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Comparacion de Algoritmos -->
+
+        <!-- Inicio de ventana de Bubble Sort -->
+        <div id="bubbleSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Bubble Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Bubble Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Bubble Sort -->
+
+        <!-- Inicio de ventana de Selection Sort -->
+        <div id="selectionSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Selection Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Selection Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Selection Sort -->
+
+        <!-- Inicio de ventana de Insertion Sort -->
+        <div id="insertionSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Insertion Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Insertion Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Insertion Sort -->
+
+        <!-- Inicio de ventana de Merge Sort -->
+        <div id="mergeSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Merge Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Merge Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Merge Sort -->
+
+        <!-- Inicio de ventana de Quick Sort -->
+        <div id="quickSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Quick Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Quick Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Quick Sort -->
+
+        <!-- Inicio de ventana de Quick Sort Randomized -->
+        <div id="randomizedQuickSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Quick Sort Randomized</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Quick Sort Randomized -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Quick Sort Randomized -->
+
+        <!-- Inicio de ventana de Heap Sort -->
+        <div id="heapSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Heap Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Heap Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Heap Sort -->
+
+        <!-- Inicio de ventana de Count Sort -->
+        <div id="countSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Count Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Count Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Count Sort -->
+
+        <!-- Inicio de ventana de Radix Sort -->
+        <div id="radixSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Radix Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Radix Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Radix Sort -->
+
+        <!-- Inicio de ventana de Bucket Sort -->
+        <div id="bucketSortContainer" class="tab-content">
+          <div class="form-section">
+            <div>
+              <h2>Bucket Sort</h2>
+            </div>
+          </div>
+          <div class="results-section">
+            <div class="results">
+              <!-- Aquí mostrar los resultados del algoritmo Bucket Sort -->
+            </div>
+          </div>
+        </div>
+        <!-- Fin de ventana de Bucket Sort -->
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
