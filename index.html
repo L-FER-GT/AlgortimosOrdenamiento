@@ -16,83 +16,116 @@
     <div class="container">
       <aside class="sidebar">
         <h2>Algoritmos de Ordenación</h2>
+        <details>
+          <summary>Comparacion de Algoritmos</summary>
+          <ul>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'tablaComparacionContainer')"
+              >
+                Tabla de Comparacion
+              </button>
+            </li>
+          </ul>
+        </details>
+        <details>
+          <summary>Algoritmos Simples</summary>
+          <ul>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'bubbleSortContainer')"
+              >
+                Bubble Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'selectionSortContainer')"
+              >
+                Selection Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'insertionSortContainer')"
+              >
+                Insertion Sort
+              </button>
+            </li>
+          </ul>
+        </details>
 
-        <button
-          class="tab-link active"
-          onclick="openModule(event, 'tablaComparacionContainer')"
-        >
-          Tabla de Comparacion
-        </button>
+        <details>
+          <summary>Algoritmos Medianamente Complejos</summary>
+          <ul>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'mergeSortContainer')"
+              >
+                Merge Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'heapSortContainer')"
+              >
+                Heap Sort
+              </button>
+            </li>
+          </ul>
+        </details>
 
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'bubbleSortContainer')"
-        >
-          Bubble Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'selectionSortContainer')"
-        >
-          Selection Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'insertionSortContainer')"
-        >
-          Insertion Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'mergeSortContainer')"
-        >
-          Merge Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'quickSortContainer')"
-        >
-          Quick Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'randomizedQuickSortContainer')"
-        >
-          Quick Sort Randomized
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'heapSortContainer')"
-        >
-          Heap Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'countSortContainer')"
-        >
-          Count Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'radixSortContainer')"
-        >
-          Radix Sort
-        </button>
-
-        <button
-          class="tab-link"
-          onclick="openModule(event, 'bucketSortContainer')"
-        >
-          Bucket Sort
-        </button>
+        <details>
+          <summary>Algoritmos Complejos</summary>
+          <ul>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'quickSortContainer')"
+              >
+                Quick Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'randomizedQuickSortContainer')"
+              >
+                Quick Sort Randomized
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'countSortContainer')"
+              >
+                Count Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'radixSortContainer')"
+              >
+                Radix Sort
+              </button>
+            </li>
+            <li>
+              <button
+                class="tab-link"
+                onclick="openModule(event, 'bucketSortContainer')"
+              >
+                Bucket Sort
+              </button>
+            </li>
+          </ul>
+        </details>
       </aside>
       <main class="main-content">
         <!-- Inicio de ventana de Comparacion de Algoritmos -->

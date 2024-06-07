@@ -1,207 +1,189 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    height: 100vh;
-    background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
 }
 
 .container {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
-
-.sidebar {
-    width: 200px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
-}
-
-.sidebar h2 {
-    text-align: center;
-}
-
-.tab-link {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    background: #444;
-    border: none;
-    color: white;
-    text-align: left;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.tab-link:hover, .tab-link.active {
-    background: #555;
+  display: flex;
+  width: 100%;
+  height: 100%;
 }
 
 .main-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
 }
 
 .tab-content {
-    display: none;
+  display: none;
 }
 
 .tab-content.active {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
 }
 
 .form-section {
-    flex: 1;
-    padding-right: 20px;
+  flex: 1;
+  padding-right: 20px;
 }
 
 .results-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 label {
-    margin: 10px 0 5px;
+  margin: 10px 0 5px;
 }
 
-input, select, button {
-    padding: 10px;
-    margin-bottom: 10px;
+input,
+select,
+button {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .results {
-    margin-top: 20px;
-    width: 100%;
+  margin-top: 20px;
+  width: 100%;
 }
 
 .results canvas {
-    margin-top: 20px;
-    max-width: 100%;
+  margin-top: 20px;
+  max-width: 100%;
 }
 
 .small-pie-chart {
-    max-width: 200px;  /* Ajusta este valor según sea necesario */
-    max-height: 200px; /* Ajusta este valor según sea necesario */
-    width: 60%;
-    height: max-content;
-    padding-bottom: "10px";
+  max-width: 200px; /* Ajusta este valor según sea necesario */
+  max-height: 200px; /* Ajusta este valor según sea necesario */
+  width: 60%;
+  height: max-content;
+  padding-bottom: "10px";
 }
 /* Añadir estilos para el contenedor principal */
 .sort-Algorimth-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    min-height: 100vh;
-    background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f4f4f4;
 }
 
 /* Añadir estilos para los formularios y resultados */
 .results-section {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 .form-section {
-    flex: 1;
-    padding-right: 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+  flex: 1;
+  padding-right: 20px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
 }
 
 /* Ajustar tamaños de fuente y espaciado */
 label {
-    margin: 10px 0;
-    font-size: 16px;
+  margin: 10px 0;
+  font-size: 16px;
 }
 
-input, select, button {
-    padding: 10px;
-    margin-bottom: 15px;
-    font-size: 16px;
+input,
+select,
+button {
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .results canvas {
-    margin-top: 20px;
-    max-width: 100%;
-    height: auto;
+  margin-top: 20px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* Añadir reglas de estilo para dispositivos móviles */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 }
 
 h2 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 h3 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 h4 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
 }
 p {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 label {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 select {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 button {
-    background-color: #0E46A3;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white; /* Color del texto */
-    padding: 10px 20px; /* Espaciado interno del botón */
-    border: none; /* Quita el borde por defecto */
-    border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del botón */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+  background-color: #0e46a3;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: white; /* Color del texto */
+  padding: 10px 20px; /* Espaciado interno del botón */
+  border: none; /* Quita el borde por defecto */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del botón */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
 }
 
 button:hover {
-    background-color: #09408a; /* Color del fondo al pasar el ratón */
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
+  background-color: #09408a; /* Color del fondo al pasar el ratón */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra al pasar el ratón */
 }
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100px; /* Ajusta el tamaño según sea necesario */
-    height: auto; /* Mantiene la proporción de aspecto */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; /* Ajusta el tamaño según sea necesario */
+  height: auto; /* Mantiene la proporción de aspecto */
 }
 
 /* input {
@@ -210,173 +192,239 @@ img {
 
 /* Estilo para todas las tablas con la clase data-table */
 table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: 'Arial', sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para las celdas de encabezado en todas las tablas */
 table th {
-    background-color: #3f40ad;
-    color: white;
-    border: 1px solid #ddd;
-    padding: 7px;
-    text-align: left;
+  background-color: #3f40ad;
+  color: white;
+  border: 1px solid #ddd;
+  padding: 7px;
+  text-align: left;
 }
 
 /* Estilo para las celdas de datos en todas las tablas */
 table td {
-    border: 1px solid #ddd;
-    padding: 6px;
-    text-align: left;
+  border: 1px solid #ddd;
+  padding: 6px;
+  text-align: left;
 }
 
 /* Estilo para la primera columna en todas las tablas */
 table td:first-child {
-    background-color: #3f40ad;
-    color: white;
+  background-color: #3f40ad;
+  color: white;
 }
 
 /* Estilo para las filas impares en todas las tablas */
 table tr:nth-child(even) {
-    background-color: #c8e2fa;
+  background-color: #c8e2fa;
 }
 
 /* Estilo para las filas al pasar el ratón en todas las tablas */
 table tr:hover {
-    background-color: #eaeaea;
+  background-color: #eaeaea;
 }
-
 
 /* Estilo para el modal */
 /* Estilo para el diálogo modal */
 dialog {
-    border: 0;
-    border-radius: 15px; /* Bordes redondeados */
-    padding: 20px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 80%;
-    position: relative;
-  }
+  border: 0;
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  position: relative;
+}
 
-  /* Estilo para el fondo del modal */
-  .modal {
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Estilo para el contenido del diálogo */
-  .modal dialog {
-    background-color: white;
-    padding: 0px;
-    border-radius: 8px;
-    border: 0;
-    max-width: 80%;
-    position: relative;
-  }
+/* Estilo para el fondo del modal */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Estilo para el contenido del diálogo */
+.modal dialog {
+  background-color: white;
+  padding: 0px;
+  border-radius: 8px;
+  border: 0;
+  max-width: 80%;
+  position: relative;
+}
 
-  /* Estilo para el botón de cierre */
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-    border: none;
-    background: none;
-  }
-
+/* Estilo para el botón de cierre */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
 
 select {
-    width: 150px;
+  width: 150px;
 }
 
 input {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    margin-right: 6px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  margin-right: 6px;
+}
 
-  }
-  
-  input:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-  }
-  
-  input::placeholder {
-    color: #999;
-    font-style: italic;
-  }
-  
-  input:disabled {
-    background-color: #e9ecef;
-    cursor: not-allowed;
-    color: #6c757d;
-  }
-  
-  input[type="number"] {
-    width: 300px;
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
 
-  }
-  
+input::placeholder {
+  color: #999;
+  font-style: italic;
+}
 
-
-  select {
-    padding: 10px 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    color: #333;
-    background-color: #fff;
-    transition: border-color 0.3s, box-shadow 0.3s;
-  }
-  
-  select:focus {
-    border-color: #007BFF;
-    outline: none;
-    /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
-  }
-  
-  select option {
-    color: #333;
-    background-color: #fff;
-  }
-  
-  select:disabled {
-    background-color:
-  #e9ecef;
+input:disabled {
+  background-color: #e9ecef;
   cursor: not-allowed;
   color: #6c757d;
-  }
-  
-  select {
+}
+
+input[type="number"] {
+  width: 300px;
+}
+
+select {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+  /* box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); */
+}
+
+select option {
+  color: #333;
+  background-color: #fff;
+}
+
+select:disabled {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  color: #6c757d;
+}
+
+select {
   border-radius: 8px;
   /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
-  }
+}
 
-  #totalCapitalLabel {
-    float: left; /* Alinea el span a la izquierda */
-  }
-  
-  p span {
-    float: right; /* Alinea los spans restantes a la derecha */
-  }
-  
+#totalCapitalLabel {
+  float: left; /* Alinea el span a la izquierda */
+}
 
+p span {
+  float: right; /* Alinea los spans restantes a la derecha */
+}
+
+.sidebar {
+  width: 250px;
+  height: max-content;
+  min-height: 100%;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 15px;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tab-link {
+  display: block;
+  width: 100%;
+  height: 35px;
+  margin-bottom: 4px;
+  background: none;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+  cursor: pointer;
+  font-size: 14px;
+  border-bottom: 1px solid #333;
+}
+
+.tab-link:hover,
+.tab-link.active {
+  background-color: #333;
+}
+
+details {
+  margin-bottom: 10px;
+}
+
+summary {
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px 0;
+  position: relative;
+  list-style: none;
+}
+
+summary::marker {
+  color: #0000ff; /* Cambia el color de la flecha a azul */
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+details ul {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+/* Estilo para la flecha del summary */
+details summary::-webkit-details-marker {
+  color: #0000ff; /* Cambia el color de la flecha a azul en navegadores webkit */
+}
+
+details summary::before {
+  content: "▶";
+  color: #0000ff; /* Cambia el color de la flecha a azul */
+  display: inline-block;
+  margin-right: 10px;
+}
+
+details[open] summary::before {
+  content: "▼";
+}
