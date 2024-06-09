@@ -21,5 +21,7 @@ function countingSort(arr, exp) {
     for (let i = 0; i < n; i++) {
         arr[i] = output[i];
     }
+
+    return arr; // Devolver el arreglo ordenado
 }
 export default countingSort

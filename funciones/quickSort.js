@@ -19,6 +19,8 @@ function quickSort(arr, p, r) {
         quickSort(arr, p, q - 1);
         quickSort(arr, q + 1, r);
     }
+
+    return arr; // Devolver el arreglo ordenado
 }
 
 export default quickSort

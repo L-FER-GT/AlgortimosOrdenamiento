@@ -1,4 +1,4 @@
-function selectionSort(A, n) {
+function selectionSort(A, n = A.length) {
     for (var i = 0; i < n - 1; i++) {
         var min = i; // Inicializa el índice del mínimo como i
         for (var j = i + 1; j < n; j++) {
@@ -13,5 +13,6 @@ function selectionSort(A, n) {
             A[min] = temp;
         }
     }
+    return A; // Devuelve el arreglo ordenado
 }
-export default electionSort
+export default selectionSort

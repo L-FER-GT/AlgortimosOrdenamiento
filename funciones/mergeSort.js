@@ -40,13 +40,15 @@ function merge(arr, p, q, r) {
     }
 }
 
-function mergeSort(arr, p, r) {
+function mergeSort(arr, p = 0, r = arr.length - 1) {
     if (p < r) {
         const q = Math.floor((p + r) / 2);
         mergeSort(arr, p, q);
         mergeSort(arr, q + 1, r);
         merge(arr, p, q, r);
     }
+
+    return arr; // Devolver el arreglo ordenado
 }
 
-export default merge
+export default mergeSort

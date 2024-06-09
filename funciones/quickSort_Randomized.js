@@ -19,12 +19,12 @@ function randomPartition(arr, p, r) {
     return partition(arr, p, r);
 }
 
-function quickSort(arr, p, r) {
+function quickSort_Randomized(arr, p, r) {
     if (p < r) {
         const q = randomPartition(arr, p, r);
-        quickSort(arr, p, q - 1);
-        quickSort(arr, q + 1, r);
+        quickSort_Randomized(arr, p, q - 1);
+        quickSort_Randomized(arr, q + 1, r);
     }
 }
 
-export default randomPartition
+export default quickSort_Randomized

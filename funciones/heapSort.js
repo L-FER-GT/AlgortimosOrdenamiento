@@ -30,6 +30,8 @@ function heapSort(arr, n) {
         [arr[0], arr[i]] = [arr[i], arr[0]]; // Intercambio
         maxHeapify(arr, i, 0);
     }
+
+    return arr; // Devolver el arreglo ordenado
 }
 
 export default heapSort

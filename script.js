@@ -1,4 +1,10 @@
-
+const dataArrays = {
+  10: [],
+  100: [],
+  1000: [],
+  10000: [],
+  100000: [],
+};
 const dataTest = {
   longArray: [10, 100, 1000, 10000, 100000],
   BubbleSort: ["0", "0", "0", "0", "0"],
@@ -31,17 +37,35 @@ function llenarTabla() {
     tbody.appendChild(row);
   }
 }
+function generateRandomOrder(value) {
+  const arr = [];
+
+  // Llenar el arreglo con valores del 1 al n
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+
+  // Algoritmo de Fisher-Yates para permutar el arreglo
+  for (let i = arr.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  dataArrays[value] = arr;
+}
 //Proyect A
 document.addEventListener("DOMContentLoaded", () => {
-  llenarTabla()
+  llenarTabla();
+  for (const keyArrays in dataArrays) {
+    generateRandomOrder(keyArrays);
+  }
   //--------------SECCION DE LA TABLA DE COMPARACION-------------------
   const container_TablaComparacion = document.getElementById(
     "tablaComparacionContainer"
   );
   container_TablaComparacion.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que el formulario se envíe
-    dataTest['BubbleSort'][0]=5
-    llenarTabla()
+    dataTest["BubbleSort"][0] = 5;
+    llenarTabla();
   });
   //--------------SECCION ALGORITMO BUBBLESORT-------------------
   container_BubbleSort = document.getElementById("bubbleSortContainer");

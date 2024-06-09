@@ -15,6 +15,8 @@ function bubbleSort(arr) {
         }
         len--;
     } while (swapped);
+
+    return arr; // Devolver el arreglo ordenado
 }
 
 export default bubbleSort
