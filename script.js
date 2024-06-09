@@ -1,13 +1,47 @@
+
+const dataTest = {
+  longArray: [10, 100, 1000, 10000, 100000],
+  BubbleSort: ["0", "0", "0", "0", "0"],
+  SelectionSort: ["0", "0", "0", "0", "0"],
+  InsertionSort: ["0", "0", "0", "0", "0"],
+  MergeSort: ["0", "0", "0", "0", "0"],
+  QuickSort: ["0", "0", "0", "0", "0"],
+  QuickSort_Randomized: ["0", "0", "0", "0", "0"],
+  HeapSort: ["0", "0", "0", "0", "0"],
+  CountSort: ["0", "0", "0", "0", "0"],
+  RadixSort: ["0", "0", "0", "0", "0"],
+  BucketSort: ["0", "0", "0", "0", "0"],
+};
+function llenarTabla() {
+  const table = document.getElementById("comparacion-dataTable");
+  const tbody = table.querySelector("tbody");
+  // Vaciar la tabla
+  tbody.innerHTML = "";
+  // Llenar la tabla con los datos
+  let i = 0;
+  for (let x = 0; x < dataTest["longArray"].length; x++) {
+    const row = document.createElement("tr");
+    // Añadir los datos en 0
+    for (const llavesTest of Object.keys(dataTest)) {
+      const dataCell = document.createElement("td");
+      dataCell.textContent = dataTest[llavesTest][i];
+      row.appendChild(dataCell);
+    }
+    i += 1;
+    tbody.appendChild(row);
+  }
+}
 //Proyect A
 document.addEventListener("DOMContentLoaded", () => {
+  llenarTabla()
   //--------------SECCION DE LA TABLA DE COMPARACION-------------------
-  container_TablaComparacion = document.getElementById(
+  const container_TablaComparacion = document.getElementById(
     "tablaComparacionContainer"
   );
   container_TablaComparacion.addEventListener("submit", function (event) {
     event.preventDefault(); // Evita que el formulario se envíe
-
-    // Aquí va tu lógica para el algoritmo Bubble Sort
+    dataTest['BubbleSort'][0]=5
+    llenarTabla()
   });
   //--------------SECCION ALGORITMO BUBBLESORT-------------------
   container_BubbleSort = document.getElementById("bubbleSortContainer");
@@ -95,6 +129,10 @@ document.addEventListener("DOMContentLoaded", () => {
 function openModule(evt, moduleName) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tab-content");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].classList.remove("active");
+  }
+  tabcontent = document.getElementsByClassName("tab-content-2");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].classList.remove("active");
   }

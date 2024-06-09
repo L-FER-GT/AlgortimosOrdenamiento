@@ -129,18 +129,66 @@
       </aside>
       <main class="main-content">
         <!-- Inicio de ventana de Comparacion de Algoritmos -->
-        <div id="tablaComparacionContainer" class="tab-content active">
-          <div class="form-section">
-            <div>
-              <h2>Tabla de Comparacion</h2>
+        <div id="tablaComparacionContainer" class="tab-content-2 active">
+          <div class="contenido-double">
+            <div class="form-section">
+              <div>
+                <h2>Tabla de Comparacion</h2>
+              </div>
+              <form id="comparacion-Form">
+                <div>
+                  <label for="rateFr">Selecciona Sort Algorithm:</label>
+                  <select id="rateUnitFr">
+                    <option value="BubbleSort">BubbleSort</option>
+                    <option value="SelectionSort">SelectionSort</option>
+                    <option value="InsertionSort">InsertionSort</option>
+                    <option value="MergeSort">MergeSort</option>
+                    <option value="QuickSort">QuickSort</option>
+                    <option value="QuickSort_Randomized">
+                      QuickSort Randomized
+                    </option>
+                    <option value="HeapSort">HeapSort</option>
+                    <option value="CountSort">CountSort</option>
+                    <option value="RadixSort">RadixSort</option>
+                    <option value="BucketSort">BucketSort</option>
+                    <option value="All">Todos</option>
+                  </select>
+                </div>
+                <button type="submit">Ejecutar Test</button>
+              </form>
+            </div>
+            <div class="results-section">
+              <div class="results">
+                <h3>Resumen</h3>
+              </div>
             </div>
           </div>
           <div class="results-section">
             <div class="results">
-              <h3>Resumen</h3>
+              <table id="comparacion-dataTable">
+                <thead>
+                  <tr>
+                    <th>Longitud de Array</th>
+                    <th>BubbleSort</th>
+                    <th>SelectionSort</th>
+                    <th>InsertionSort</th>
+                    <th>MergeSort</th>
+                    <th>QuickSort</th>
+                    <th>QuickSort Randomized</th>
+                    <th>HeapSort</th>
+                    <th>CountSort</th>
+                    <th>RadixSort</th>
+                    <th>BucketSort</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- Los datos se agregarán dinámicamente aquí -->
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
+
         <!-- Fin de ventana de Comparacion de Algoritmos -->
 
         <!-- Inicio de ventana de Bubble Sort -->
