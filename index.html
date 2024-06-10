@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-trendline"></script>
   </head>
   <body class="sort-Algorimth-body">
     <div class="container">
@@ -137,8 +138,10 @@
               </div>
               <form id="comparacion-Form">
                 <div>
-                  <label for="rateFr">Selecciona Sort Algorithm:</label>
-                  <select id="rateUnitFr">
+                  <label for="selecAlgorithm"
+                    >Selecciona Sort Algorithm:
+                  </label>
+                  <select id="selecUnitAlgorithm">
                     <option value="BubbleSort">BubbleSort</option>
                     <option value="SelectionSort">SelectionSort</option>
                     <option value="InsertionSort">InsertionSort</option>
@@ -154,12 +157,89 @@
                     <option value="All">Todos</option>
                   </select>
                 </div>
+                <div>
+                  <label for="inicioEjecucion">Inicio: </label>
+                  <select id="inicio-select-Ejecucion" class="selectNivel">
+                    <option value="10">10</option>
+                    <option value="100">100</option>
+                    <option value="1000">1000</option>
+                    <option value="10000">10000</option>
+                    <option value="50000">50000</option>
+                    <option value="100000">100000</option>
+                  </select>
+                  <label for="nivel-ejecucion">Niveles de Ejecucion: </label
+                  ><input
+                    type="number"
+                    class="inputNivel"
+                    id="nivel-input-ejecucion"
+                    value="1"
+                    required
+                  />
+                </div>
                 <button type="submit">Ejecutar Test</button>
               </form>
             </div>
             <div class="results-section">
-              <div class="results">
-                <h3>Resumen</h3>
+              <div>
+                <div class="containerFlexRow">
+                  <h3>Graficar</h3>
+                  <button id="select_G1_Group">G1</button>
+                  <button id="select_G2_Group">G2</button>
+                  <button id="select_G3_Group">G3</button>
+                </div>
+                <form id="sortingAlgorithmsForm">
+                  <div class="containerFlexRow">
+                    <label>
+                      <input type="checkbox" name="bubbleSort" class="checkboxGroup G1"/> Bubble Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="selectionSort" class="checkboxGroup G1"/> Selection
+                      Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="insertionSort" class="checkboxGroup G1"/> Insertion
+                      Sort
+                    </label>
+                  </div>
+                  <div class="containerFlexRow">
+                    <label>
+                      <input type="checkbox" name="mergeSort" class="checkboxGroup G2"/> Merge Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="quickSort" class="checkboxGroup G2"/> Quick Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="quickSort_Randomized" class="checkboxGroup G2"/>
+                      Quick Sort Randomized
+                    </label>
+                  </div>
+                  <div class="containerFlexRow">
+                    <label>
+                      <input type="checkbox" name="heapSort" class="checkboxGroup G3"/> Heap Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="countSort" class="checkboxGroup G3"/> Count Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="radixSort" class="checkboxGroup G3"/> Radix Sort
+                    </label>
+                    <label>
+                      <input type="checkbox" name="bucketSort" class="checkboxGroup G3"/> Bucket Sort
+                    </label>
+                  </div>
+                  <button id="submit">Graficar</button>
+                </form>
+                <dialog id="graf-dialog">
+                  <span class="close">&times;</span>
+                  <div class="centrado">
+                    <h4>Grafico de comparacion</h4>
+                  </div>
+                  <canvas
+                    id="sortingAlgorithmsChart"
+                    width="1500"
+                    height="1200"
+                  ></canvas>
+                </dialog>
               </div>
             </div>
           </div>
@@ -185,6 +265,12 @@
                   <!-- Los datos se agregarán dinámicamente aquí -->
                 </tbody>
               </table>
+            </div>
+            <div class="containerFlexRow">
+              <button id="guardarBtn">Guardar Tabla</button>
+
+              <div style="width: 50px"></div>
+              <button id="cargarBtn">Cargar Tabla</button>
             </div>
           </div>
         </div>
@@ -342,6 +428,6 @@
         <!-- Fin de ventana de Bucket Sort -->
       </main>
     </div>
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
