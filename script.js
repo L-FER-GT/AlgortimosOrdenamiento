@@ -635,23 +635,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-function openModule(evt, moduleName) {
-  let i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tab-content");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("active");
-  }
-  tabcontent = document.getElementsByClassName("tab-content-2");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].classList.remove("active");
-  }
-  tablinks = document.getElementsByClassName("tab-link");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].classList.remove("active");
-  }
-  document.getElementById(moduleName).classList.add("active");
-  evt.currentTarget.classList.add("active");
-}
 function generarColorAleatorio() {
   // Generar valores aleatorios para los componentes rojo, verde y azul (RGB)
   let r = Math.floor(Math.random() * 100) + 110; // Rango entre 128 y 255 (más claro)
